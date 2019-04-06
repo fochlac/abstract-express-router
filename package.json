@@ -1,6 +1,6 @@
 {
   "name": "abstract-express-router",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "library to automagically create an express router-object with basic validation for params based on a javascript object",
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage && codecov --token=866bf6d9-4fe7-4570-b7f3-cd2c4633c091"
+    "coverage": "jest --coverage && codecov --token=866bf6d9-4fe7-4570-b7f3-cd2c4633c091",
+    "release": "npm version minor --no-git-tag-version"
   },
   "author": "Florian Riedel <low@fochlac.com>",
   "license": "ISC",
