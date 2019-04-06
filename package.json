@@ -4,8 +4,8 @@
   "description": "library to automagically create an express router-object with basic validation for params based on a javascript object",
   "main": "index.js",
   "scripts": {
-	"test": "jest",
-	"coverage": "jest --coverage"
+    "test": "jest",
+    "coverage": "jest --coverage && codecov --token=866bf6d9-4fe7-4570-b7f3-cd2c4633c091"
   },
   "author": "Florian Riedel <low@fochlac.com>",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
     "@babel/plugin-proposal-optional-catch-binding": "^7.2.0",
     "@babel/preset-env": "^7.4.3",
+    "codecov": "^3.3.0",
     "jest": "^24.7.1",
     "sinon": "^7.3.1",
     "supertest": "^4.0.2"
