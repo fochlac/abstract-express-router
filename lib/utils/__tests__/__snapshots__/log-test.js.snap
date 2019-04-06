@@ -1,52 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`createLogger should use console.log if no logger is provided 1`] = `
-Array [
-  "2019_3_5-23:55:31-[abstract-express-router]-1-test test2 
+"2019_3_5-21:55:31-[abstract-express-router]-1-test test2 
 {
   \\"test\\": \\"123\\"
 } 
-Error: test
-    at Object.it (C:\\\\gitHub\\\\json-express-router\\\\lib\\\\utils\\\\__tests__\\\\log-test.js:26:44)
-    at Object.asyncJestTest (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\jasmineAsyncInstall.js:102:37)
-    at resolve (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:43:12)
-    at new Promise (<anonymous>)
-    at mapper (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:26:19)
-    at promise.then (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:73:41)
-    at process._tickCallback (internal/process/next_tick.js:68:7)",
-]
+Error: test "
 `;
 
 exports[`createLogger should use console.log if no logger is provided 2`] = `
 Array [
-  "2019_3_5-23:55:31-[abstract-express-router]-3-test test2",
+  "2019_3_5-21:55:31-[abstract-express-router]-3-test test2",
 ]
 `;
 
 exports[`createLogger should use console.log if no logger is provided 3`] = `
 Array [
-  "2019_3_5-23:55:31-[abstract-express-router]-2-test test2 error parsing item: [object Object] - TypeError: Converting circular structure to JSON",
+  "2019_3_5-21:55:31-[abstract-express-router]-2-test test2 error parsing item: [object Object] - TypeError: Converting circular structure to JSON",
 ]
 `;
 
 exports[`createLogger should use the provided logger 1`] = `
-Array [
-  Object {
-    "level": 1,
-    "message": "test test2 
+"test test2 
 {
   \\"test\\": \\"123\\"
 } 
-Error: test
-    at Object.it (C:\\\\gitHub\\\\json-express-router\\\\lib\\\\utils\\\\__tests__\\\\log-test.js:12:44)
-    at Object.asyncJestTest (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\jasmineAsyncInstall.js:102:37)
-    at resolve (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:43:12)
-    at new Promise (<anonymous>)
-    at mapper (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:26:19)
-    at promise.then (C:\\\\gitHub\\\\json-express-router\\\\node_modules\\\\jest-jasmine2\\\\build\\\\queueRunner.js:73:41)
-    at process._tickCallback (internal/process/next_tick.js:68:7)",
-  },
-]
+Error: test "
 `;
 
 exports[`createLogger should use the provided logger 2`] = `
