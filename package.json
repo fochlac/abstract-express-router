@@ -58,6 +58,10 @@
 		"moduleFileExtensions": [
 			"js"
 		],
+		"testPathIgnorePatterns": [
+			"node_modules",
+			"dist"
+		],
 		"moduleDirectories": [
 			"node_modules"
 		]
