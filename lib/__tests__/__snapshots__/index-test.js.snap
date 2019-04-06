@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`integration test should call correct middlewares and validation request to "/api/branch" with invalid body 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "POST call to /api/branches",
+    },
+  ],
+  Array [
+    Object {
+      "level": 2,
+      "message": "Validation failed at field branch for call to /api/branches",
+    },
+  ],
+]
+`;
+
+exports[`integration test should call correct middlewares, validation and controller for valid request to "/api/branch" 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "POST call to /api/branches",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Validation succeded for call to /api/branches",
+    },
+  ],
+]
+`;
+
+exports[`integration test should call full route if every parameter is valid 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "POST call to /api/pullrequests/123/",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Validation succeded for call to /api/pullrequests/123",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Validation succeded for call to /api/pullrequests/123",
+    },
+  ],
+]
+`;
+
+exports[`integration test should call root level middleware for any request 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "GET call to /api",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Call to unknown path: /api",
+    },
+  ],
+]
+`;
+
+exports[`integration test should skip to next route if path param is invalid 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "POST call to /api/pullrequests/asad",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Validation of path parameters failed for call to /api/pullrequests/asad. Trying next route.",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Call to unknown path: /api/pullrequests/asad",
+    },
+  ],
+]
+`;
