@@ -1,4 +1,6 @@
 # abstract-express-router
+[![codecov](https://codecov.io/gh/fochlac/abstract-express-router/branch/master/graph/badge.svg)](https://codecov.io/gh/fochlac/abstract-express-router)
+[![CircleCI](https://circleci.com/gh/fochlac/abstract-express-router.svg?style=svg)](https://circleci.com/gh/fochlac/abstract-express-router)
 
 An framework for [express.js]( https://github.com/visionmedia/express ) which abstracts much of the syntax creating an express-router while keeping the core-functionality. This allows for a quick and clean creation of a router in a single file without writing repetitive code, while still keeping the full control by adding middlewares whereever needed. Also provides simple validation functionality for path and query parameters and for the body.
 
