@@ -1,6 +1,6 @@
 {
 	"name": "abstract-express-router",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"description": "library to automagically create an express router-object with basic validation for params based on a javascript object",
 	"repository": {
 		"type": "git",

@@ -74,6 +74,34 @@ Array [
 ]
 `;
 
+exports[`integration test should call static middleware if it doesnt match anything else for gets 1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "GET call to /invalidTestPath",
+    },
+  ],
+]
+`;
+
+exports[`integration test should return default 404 without catchAll and matching route  1`] = `
+Array [
+  Array [
+    Object {
+      "level": 4,
+      "message": "POST call to /api/pullrequests/asad",
+    },
+  ],
+  Array [
+    Object {
+      "level": 3,
+      "message": "Validation of path parameters failed for call to /api/pullrequests/asad. Trying next route.",
+    },
+  ],
+]
+`;
+
 exports[`integration test should skip to next route if path param is invalid 1`] = `
 Array [
   Array [
