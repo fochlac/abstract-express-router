@@ -25,13 +25,13 @@
 	"author": "Florian Riedel <low@fochlac.com>",
 	"license": "ISC",
 	"dependencies": {
-		"@babel/cli": "^7.4.3",
 		"body-parser": "^1.18.3",
 		"compression": "^1.7.4",
 		"cookie-parser": "^1.4.4",
 		"express": "^4.16.4"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.4.3",
 		"@babel/core": "^7.4.3",
 		"@babel/plugin-proposal-async-generator-functions": "^7.2.0",
 		"@babel/plugin-proposal-class-properties": "^7.4.0",
