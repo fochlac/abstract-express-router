@@ -68,20 +68,33 @@ This Validator will evaluate whether the value is part of the provided list.
 5. Static
 6. CatchAll
 
-### Configuration
+### Configuration (_optional_)
 
 #### logger
 
-It is possible to pass a function in the configuration object. If this is done any logging will be passed into this function, split into the loglevel and the message.
+It is possible to pass a function in the configuration object. If this is done any logging will be passed into this function, split into the loglevel and the message:
+
+```
+{
+	logLevel: number
+	message: string
+}
+```
 
 #### logLevel
 
-This library provides 4 log levels:
-0 - silent, 1 - error, 2 - warning, 3 - info
+If no logger function is configured, all logging will be prefixed with the application name, filtered by log level and the output send to console.log.
+This library supports 4 log levels: `0` - silent, `1` - error, `2` - warning, `3` - info
+`default: 3`
 
 #### useCatchAll
 
 Whether to use the default catchAll returning a 404 error.
+`default: true`
+
+#### bodyParserOptions
+
+Configuration object to be passed into the json/urlEncoded bodyparser.
 
 ## Example
 
