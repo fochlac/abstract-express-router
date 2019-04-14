@@ -76,7 +76,7 @@ It is possible to pass a function in the configuration object. If this is done a
 
 ```
 {
-	logLevel: number
+	level: number
 	message: string
 }
 ```
