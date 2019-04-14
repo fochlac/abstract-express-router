@@ -74,16 +74,7 @@ Array [
 ]
 `;
 
-exports[`integration test should call static middleware if it doesnt match anything else for gets 1`] = `
-Array [
-  Array [
-    Object {
-      "level": 4,
-      "message": "GET call to /invalidTestPath",
-    },
-  ],
-]
-`;
+exports[`integration test should call static middleware if it doesnt match anything else for gets 1`] = `Array []`;
 
 exports[`integration test should return default 404 without catchAll and matching route  1`] = `
 Array [
