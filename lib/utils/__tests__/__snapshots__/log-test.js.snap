@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`createLogger should use console.log if no logger is provided 1`] = `
-"2019_3_5-21:55:31-[abstract-express-router]-1-test test2 
+"2019_3_5-21:55:31-[abstract-express-router]-1-0-test test2 
 {
   \\"test\\": \\"123\\"
 } 
@@ -10,13 +10,13 @@ Error: test "
 
 exports[`createLogger should use console.log if no logger is provided 2`] = `
 Array [
-  "2019_3_5-21:55:31-[abstract-express-router]-3-test test2",
+  "2019_3_5-21:55:31-[abstract-express-router]-3-0-test test2",
 ]
 `;
 
 exports[`createLogger should use console.log if no logger is provided 3`] = `
 Array [
-  "2019_3_5-21:55:31-[abstract-express-router]-2-test test2 error parsing item: [object Object] - TypeError: Converting circular structure to JSON",
+  "2019_3_5-21:55:31-[abstract-express-router]-2-0-test test2 error parsing item: [object Object] - TypeError: Converting circular structure to JSON",
 ]
 `;
 
@@ -33,6 +33,7 @@ Array [
   Object {
     "level": 3,
     "message": "test test2",
+    "requestId": 0,
   },
 ]
 `;
