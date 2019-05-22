@@ -3,7 +3,7 @@ jobs:
     build:
         working_directory: /home/circleci/abstract-express-router
         docker:
-            - image: circleci/node:latest-browsers
+            - image: circleci/node:lts
         steps:
             - checkout
             - run:
